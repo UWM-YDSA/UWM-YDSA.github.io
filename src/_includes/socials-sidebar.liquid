@@ -1,0 +1,25 @@
+---
+layout: "base.liquid"
+---
+
+<div class="flex">
+  <div class="content">
+    {{ content }}
+  </div>
+  <aside class="right">
+    {% if socials %}
+      {% sectitle "Follow Us" %}
+      {% for link in socials %}
+        <h3>
+          <a href="{{ link.url }}">{{ link.text }}</a>
+        </h3>
+      {% endfor %}
+
+      {% assign fullname = "Join YDSA@" | append: shortcode %}
+      {% sectitle fullname %}
+      <p></p>
+    {% else %}
+      {% include 'snippets/join-mke.liquid' %}
+    {% endif %}
+  </aside>
+</div>
