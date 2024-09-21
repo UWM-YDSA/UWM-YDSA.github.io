@@ -1,0 +1,293 @@
+@import url(https://fonts.bunny.net/css?family=open-sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i);
+@import url(/static/style/manifold-dsa.css);
+
+:root {
+    /* DSA Colors */
+    --red: #EC1F27;
+    --red-tint-1: #F04C53;
+    --red-tint-2: #F4797E;
+    --red-tint-3: #F7A5A9;
+    --red-tint-4: #FBD2D4;
+    --black: #231F20;
+    --black-tint-1: #3B3838;
+    --black-tint-2: #605C5C;
+    --black-tint-3: #8C8989;
+    --black-tint-4: #C1C0BF;
+
+    --off-white: #F2F3F4;
+
+    /* Spacing */
+    --spacing: 20px;
+}
+
+/* Mobile-first */
+
+/***********/
+/* Globals */
+/***********/
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+.content a:is([href^="http:"],[href^="https:"],[href^="//"]):not([href*="mkeydsa"]):after {
+    content: url('/static/img/outlink.svg');
+}
+
+.content a:is([href^="http:"],[href^="https:"],[href^="//"]):not([href*="mkeydsa"]):hover:after {
+    content: url('/static/img/outlink-hover.svg');
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--red-tint-1);
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: "Manifold DSA", Impact, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-weight: 600;
+}
+
+hr {
+    size: 1px;
+    margin: 0;
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+aside {
+    width: 100%;
+}
+
+aside h2 {
+    margin-bottom: 0;
+}
+
+/***********/
+/* Classes */
+/***********/
+
+.flex {
+    display: flex;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.dropdown-label {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding: 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    white-space: nowrap;
+}
+
+.dropdown-content a {
+    display: flex;
+    padding: calc(var(--spacing) / 2);
+}
+
+.dropdown-content.right {
+    top: 30px;
+    right: 0;
+}
+
+.dropdown-label:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-grid > .flex {
+    flex-direction: column;
+}
+
+.section-grid > div > *  {
+    padding: calc(var(--spacing) / 2);
+    margin-bottom: var(--spacing);
+}
+
+.section-grid > div > a {
+    background-color: white;
+    border: var(--black) solid 2px;
+    border-radius: 10px;
+}
+
+.section-grid > div > div {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+/**************/
+/* Single-Use */
+/**************/
+
+html {
+    background-color: var(--off-white);
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header div {
+    margin-bottom: 0;
+}
+
+nav {
+    align-items: last baseline;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+nav ul {
+    /* Make the markers disappear */
+    list-style-type: none;
+    margin: 0;
+}
+
+nav > ul > li {
+    /* Puts the elements in a single line */
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 2px;
+}
+
+nav > ul > li > a:hover,
+nav .dropdown-label:hover > a,
+nav .dropdown-content {
+    text-decoration: none;
+    background-color: var(--black);
+    color: white;
+}
+
+nav .dropdown-content {
+    margin-top: calc(var(--spacing) / 3);
+}
+
+nav .dropdown-content li:hover {
+    background-color: var(--red);
+}
+
+nav .dropdown-content a {
+    color: white;
+}
+
+nav .dropdown-content a:hover {
+    text-decoration: none;
+}
+
+nav ul li a {
+    padding: calc(var(--spacing) / 3);
+}
+
+main {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    color: var(--black);
+    padding: 0 calc(var(--spacing) / 2);
+}
+
+main > .flex {
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+}
+
+.hero {
+    max-width: 1200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-position: right;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+    margin: 0 calc(var(--spacing) / 2);
+    width: 70%;
+}
+
+/* Desktop Breakpoint */
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .content {
+        margin-right: var(--spacing);
+    }
+
+    aside {
+        max-width: 360px;
+    }
+
+    main {
+        padding: calc(var(--spacing) / 2) var(--spacing);
+    }
+
+    main > .flex {
+        flex-direction: row !important;
+    }
+
+    .hero h1 {
+        width: 100%;
+        margin: 0 var(--spacing);
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) {
+    .section-grid > .flex {
+        flex-direction: row !important;
+    }
+
+    .section-grid > div > * {
+        max-width: 50%;
+    }
+
+    .section-grid > div > a {
+        margin-left: calc(var(--spacing) / 2);
+    }
+
+    .section-grid > div > a:first-of-type {
+        margin-right: calc(var(--spacing) / 2);
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-image: none !important;
+    }
+}
