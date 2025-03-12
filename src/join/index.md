@@ -11,7 +11,7 @@ layout: "socials-sidebar.liquid"
 
 Fill out our interest form to get put on our email list and learn when our events are!
 
-<iframe src="https://actionnetwork.org/forms/interest-form-for-the-uwm-ydsa?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' /><script src='https://actionnetwork.org/widgets/v5/form/interest-form-for-the-uwm-ydsa?format=js&source=widget'></script><div id='can-form-area-interest-form-for-the-uwm-ydsa' style='width: 100%'><!-- this div is the target for our HTML insertion --></div>
 
 ## 2. Register Nationally
 
