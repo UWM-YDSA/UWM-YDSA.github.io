@@ -1,0 +1,47 @@
+#title,
+#author,
+#date {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+aside h2 {
+  margin-bottom: 5px;
+}
+
+#header {
+  margin-top: var(--spacing);
+  margin-bottom: calc(var(--spacing) * 2.5);
+  aspect-ratio: 7 / 4;
+  overflow: hidden;
+}
+
+.content hr {
+  margin-top: var(--spacing);
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+#tags {
+  margin-top: calc(var(--spacing) * 3);
+}
+
+#tags * {
+  border-radius: 25px;
+  padding: calc(var(--spacing) / 3);
+  background-color: var(--black-tint-4);
+}
+
+.share-icon {
+  width: 36px;
+  aspect-ratio: 1/1;
+  margin-right: calc(var(--spacing) / 3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.share-icon img {
+  width: 60%;
+  margin: 0 auto;
+  pointer-events: none;
+}
