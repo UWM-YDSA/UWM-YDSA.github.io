@@ -1,0 +1,10 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>YDSA at UW-Milwaukee</title>
+  <subtitle>The UW-Milwaukee branch of MKE YDSA.</subtitle>
+  <link href="/feed.xml" rel="self" />
+  <link href="https://uwm.mkeydsa.org/" />
+  <updated>2025-03-27T22:07:08Z</updated>
+  <id>https://uwm.mkeydsa.org/</id>
+</feed>
