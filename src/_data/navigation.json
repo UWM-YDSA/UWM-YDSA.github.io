@@ -2,7 +2,5 @@
 	{"text": "about", "url": "/about", "subcategories": [
 		{"text": "our constitution", "url": "https://docs.google.com/document/d/1qBOInaDIgyGhXW-KDZvWfsujgxN_uYStY-MHmKoDLwU/edit?usp=sharing"},
 		{"text": "leadership", "url": "/about/leadership"}
-	]},
-	{"text": "chapters", "url": "http://mkeydsa.org/chapters"},
-	{"text": "posts", "url": "http://mkeydsa.org/posts"}
+	]}
 ]
