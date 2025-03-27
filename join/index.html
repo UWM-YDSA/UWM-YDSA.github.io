@@ -1,48 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Eleventy v2.0.1">
-    <link
-      rel="icon"
-      href="/static/img/icon/favicon-32.ico"
-      type="image/x-icon"
-      sizes="32x32">
-    <link
-      rel="icon"
-      href="/static/img/icon/favicon-192.ico"
-      type="image/x-icon"
-      sizes="192x192">
+    <meta name="generator" content="Eleventy v3.0.0">
+    <link rel="icon"
+      type="image/png"
+      href="/static/img/icon/favicon-96x96.png"
+      sizes="96x96" >
+    <link rel="icon"
+      type="image/svg+xml"
+      href="/static/img/icon/favicon.svg" >
+    <link rel="shortcut icon" href="/static/img/icon/favicon.ico" >
+    <link rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/img/icon/apple-touch-icon.png" >
+    <meta name="apple-mobile-web-app-title" content=" YDSA" >
+    <link rel="manifest" href="/static/img/icon/site.webmanifest" >
     <link rel="stylesheet" href="/static/style/common.css">
-    <link
-      rel="stylesheet"
+    <link rel="stylesheet"
       href="/static/style/print.css"
       media="print">
+      <link rel="preload"
+        href="/static/img/outlink.svg"
+        as="image"
+        type="image/svg+xml" >
+      <link rel="preload"
+        href="/static/img/outlink-hover.svg"
+        as="image"
+        type="image/svg+xml" >
+
+    <title>Join | </title>
+    <meta property="og:title" content="Join | ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Join | ">
+    <meta name="description" content="Fill out our interest form to get put on our email list and learn when our events are! YDSA is a member-driven organization that requires your dues to operate! To have voting power in YDSA@UWM meetings, you must be a dues-paying member of the organization. Don't worry! These dues are very low and can be covered or even waived if you need! Follow the national YDSA guide to register. Join  today and help build a better future, for all of us.">
+    <meta property="og:description" content="Fill out our interest form to get put on our email list and learn when our events are! YDSA is a member-driven organization that requires your dues to operate! To have voting power in YDSA@UWM meetings, you must be a dues-paying member of the organization. Don't worry! These dues are very low and can be covered or even waived if you need! Follow the national YDSA guide to register. Join  today and help build a better future, for all of us.">
+    <meta name="twitter:description" content="Fill out our interest form to get put on our email list and learn when our events are! YDSA is a member-driven organization that requires your dues to operate! To have voting power in YDSA@UWM meetings, you must be a dues-paying member of the organization. Don't worry! These dues are very low and can be covered or even waived if you need! Follow the national YDSA guide to register. Join  today and help build a better future, for all of us.">
+    <meta property="og:site_name" content="">
+      <meta property="og:type" content="website">
     
-      <title>Join | Milwaukee YDSA</title>
-    
+    <meta property="og:url" content="/join/">
+    <meta property="og:logo" content="/static/img/icon/logo.svg">
+    <meta property="og:image" content="/static/img/opengraph.jpg">
+    <meta name="twitter:image" content="/static/img/twitter-card.jpg">
+    <meta property="og:image:alt" content="The logo of ">
+    <meta name="twitter:image:alt" content="The logo of ">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <div class="flex">
+        <div class="responsive-flex">
           
           <div>
-            <a href="/">
-              <img src="/static/img/icon/logo.svg">
+            <a href="/"
+              class="flex"
+              style="overflow: hidden; width: fit-content;">
+              <img src="/static/img/icon/logo.svg" style="margin-right: 15px; margin-bottom: calc(var(--spacing) / 3); max-width: 50vh;">
             </a>
-
-            
           </div>
 
-          <nav class="right flex">
-            
+          <nav class="right flex" style="flex-direction: column;">
+            <label for='menu'
+              tabindex="0"
+              class="flex">
+              <div>
+                <span>menu</span>
+                <svg width="32"
+                  height="32"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" fill-rule="evenodd" ></path>
+                </svg>
+              </div>
+            </label>
+            <input id='menu'
+              type='checkbox'
+              checked >
+
             <ul>
               
-                <li
-                  
-                  class="dropdown-label"
+                <li class="dropdown-label"
                   >
                   <a href="/about">
                   <span>about</span>
@@ -53,7 +93,7 @@
                     <ul class="dropdown-content right">
                       
                         <li>
-                          <a href="https://docs.google.com/document/d/1qBOInaDIgyGhXW-KDZvWfsujgxN_uYStY-MHmKoDLwU/edit?usp=sharing">our constitution</a>
+                          <a href="https://docs.google.com/document/d/1qBOInaDIgyGhXW-KDZvWfsujgxN_uYStY-MHmKoDLwU/edit?usp=sharing" target="_blank" rel="noopener">our constitution</a>
                         </li>
                       
                         <li>
@@ -62,59 +102,80 @@
                       
                     </ul>
                   
-
                 </li>
               
-                <li
-                  
-                  class="dropdown-label"
-                  >
+                <li>
                   <a href="http://mkeydsa.org/chapters">
                   <span>chapters</span>
                   </a>
 
                   
                   
-                    <ul class="dropdown-content right">
-                      
-                        <li>
-                          <a href="https://uwm.mkeydsa.org">University of Wisconsin-Milwaukee</a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://msoe.mkeydsa.org">Milwaukee School of Engineering</a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://marquette.mkeydsa.org">Marquette University</a>
-                        </li>
-                      
-                    </ul>
-                  
-
                 </li>
               
-                <li
-                  >
+                <li>
                   <a href="http://mkeydsa.org/posts">
                   <span>posts</span>
                   </a>
 
                   
                   
-
                 </li>
               
+
+              
+              <li class="dropdown-label">
+                <a href="https://mkeydsa.org/chapters/">
+                  <span>chapters</span>
+                </a>
+                <ul class="dropdown-content right">
+                  
+                    <li>
+                      <a href=""></a>
+                    </li>
+                  
+                    <li>
+                      <a href=""></a>
+                    </li>
+                  
+                    <li>
+                      <a href=""></a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://uwm.mkeydsa.org">University of Wisconsin-Milwaukee</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/msoe_ydsa/" target="_blank" rel="noopener">Milwaukee School of Engineering</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://www.instagram.com/ydsa.marquette/" target="_blank" rel="noopener">Marquette University</a>
+                    </li>
+                  
+                </ul>
+              </li>
+
+              <li>
+                <a href="https://mkeydsa.org/posts/">
+                  <span>
+                    posts
+                  </span>
+                </a>
+              </li>
             </ul>
           </nav>
+
+          <script src="/static/script/nav.js"></script>
         </div>
         <hr>
       </header>
 
       
-      
-      
-        <div class="hero" style="background-image: url(/static/img/hero/join.png); background-color: var(--stem-green)">
+        <div class="hero" style="
+          background-image: url(/static/img/hero/join.png);
+          background-color: var(--stem-green)">
           <h1>Join YDSA@UWM</h1>
         </div>
       
@@ -125,37 +186,33 @@
   <div class="content">
     <h2>1. Get Involved Directly</h2>
 <p>Fill out our interest form to get put on our email list and learn when our events are!</p>
-<link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' /><script src='https://actionnetwork.org/widgets/v5/form/interest-form-for-the-uwm-ydsa?format=js&source=widget'></script><div id='can-form-area-interest-form-for-the-uwm-ydsa' style='width: 100%'><!-- this div is the target for our HTML insertion --></div>
+<link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' ><script src='https://actionnetwork.org/widgets/v5/form/interest-form-for-the-uwm-ydsa?format=js&source=widget'></script><div id='can-form-area-interest-form-for-the-uwm-ydsa' style='width: 100%'></div>
 <h2>2. Register Nationally</h2>
 <p>YDSA is a member-driven organization that requires your dues to operate! To have voting power in YDSA@UWM meetings, you must be a dues-paying member of the organization. Don't worry! These dues are very low and can be covered or even waived if you need!</p>
-<p>Follow the <a href="https://y.dsausa.org/join/">national YDSA guide to register</a>.</p>
+<p>Follow the <a href="https://y.dsausa.org/join/" target="_blank" rel="noopener">national YDSA guide to register</a>.</p>
 
   </div>
   <aside class="right">
     
+
+    
       
-      <h2>Join a MKE YDSA</h2>
+      <h2>Join </h2>
             <hr>
-<p>Become a member of a MKE YDSA today and help build a better future, starting with your campus.</p>
-<ul>
-  
-    <li>
-      <a href="https://uwm.mkeydsa.org/join">University of Wisconsin-Milwaukee</a>
-    </li>
-  
-    <li>
-      <a href="https://msoe.mkeydsa.org/join">Milwaukee School of Engineering</a>
-    </li>
-  
-    <li>
-      <a href="https://marquette.mkeydsa.org/join">Marquette University</a>
-    </li>
-  
-</ul>
+      <p>Join  today and help build a better future, for all of us.</p>
+      <h3>
+        <a href="/join/">Join </a>
+      </h3>
+    
+
     
   </aside>
 </div>
       </main>
+
+      <footer>
+        <span>Copyright © YDSA@UWM</span>
+      </footer>
     </div>
   </body>
 </html>
